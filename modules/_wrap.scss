@@ -1,0 +1,19 @@
+// fluidity
+$wrap-width: 95%!default; // mobile wrap won't be wider than this
+$wrap-max-width: 1200px!default; // desktop wrap won't be wider than this
+
+// breakpoints
+$mobile: 0px!default;
+$phablet: 550px!default;
+$tablet: 750px!default;
+$laptop: 1200px!default;
+$desktop: 1600px!default;
+
+// use wherever as a class set in dom or @extend it without touching dom
+.wrap{
+	@include selfclear();
+	
+	position: relative;
+	width: $wrap-width; max-width: $wrap-max-width;
+	margin: 0 auto;
+}

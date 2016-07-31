@@ -1,0 +1,16 @@
+@mixin selfclear(){
+	&::after{
+		content: "";
+		display: table;
+		clear: both;	
+	}
+}
+
+@mixin blockify(){
+	display: block;
+	font-size: 0px; text-indent: -9999px; line-height: 0;
+}
+
+@mixin mask(){
+	position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+}

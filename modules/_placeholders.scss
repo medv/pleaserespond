@@ -1,0 +1,14 @@
+// usage: @extend %hover;
+
+%layer{
+	-webkit-backface-visibility: hidden;
+}
+
+%hover{
+	transition: opacity 0.15s ease-out;
+	cursor: pointer;
+
+	&:hover{
+		opacity: 0.93;
+	}
+}
