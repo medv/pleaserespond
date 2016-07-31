@@ -1,6 +1,6 @@
-@import 'node_modules/normalize-scss/sass/normalize';
-@import 'node_modules/jeet/scss/jeet/jeet';
-@import 'node_modules/breakpoint-sass/stylesheets/_breakpoint';
+@import '../normalize-scss/sass/normalize/import-now';
+@import '../jeet/scss/jeet/jeet';
+@import '../breakpoint-sass/stylesheets/breakpoint';
 
 @import 'modules/base';
 @import 'modules/placeholders';

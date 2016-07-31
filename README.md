@@ -8,41 +8,41 @@ Plan and write all xhtml/css with mobile-first mentality. At some point, you wil
 
 Because jeet does not use a pre-defined grid system and has amazing gutter control, we do not have to pollute the DOM with any style-specific information (unless you want a fluid wrap). XHTML is for semantic content and CSS is for style, that was the idea a while ago some say.
 
-	//html
-	<section>
-		<div class="wrap">
-			<div class="pie">
-				Pie is delicious
-			</div>
-			<div class="cake">
-				Cake is delicious
-			</div>
-		</div>
-	</section>
-	
-	//scss
-	@import [path_to_node_modules]/pleaserespond/pleaserespond
-	section{background: red;}
-	
+    //html
+    <section>
+        <div class="wrap">
+            <div class="pie">
+                Pie is delicious
+            </div>
+            <div class="cake">
+                Cake is delicious
+            </div>
+        </div>
+    </section>
+    
+    //scss
+    @import [path_to_node_modules]/pleaserespond/pleaserespond
+    section{background: red;}
+    
 In the above case we will have two perfectly reasonable statements follow one another vertically on page. The red section will be 100% width, but the wrap (by default) will be a centered div with 95% (default) width that won't get larger than 1200px (default).
 
-	//scss
-	section{
-		.left{
-        	@include breakpoint($tablet) {
-				@include column(2/3);
+    //scss
+    section{
+        .left{
+            @include breakpoint($tablet) {
+                @include column(2/3);
             }
-		}
+        }
 
-		.right{
-			@include breakpoint($tablet) {
-				@include column(1/3);
+        .right{
+            @include breakpoint($tablet) {
+                @include column(1/3);
             }
             
             @include breakpoint($tablet + 200) {
-            	background: blue;
+                background: blue;
             }
-		}
-	}
+        }
+    }
 
 Now, above the $tablet breakpoint, we have 3 columns within our constricted wrap, with Pie taking its well-deserved larger chunk of the screen. If you keep resizing the window by a few hundred pixels you might even see the cake get blue with envy.
