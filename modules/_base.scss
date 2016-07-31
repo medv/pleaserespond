@@ -10,15 +10,14 @@ html{
 	}
 }
 
+html, body{
+	height: 100%;
+	-webkit-tap-highlight-color: transparent; // fix for react-fastclick
+}
+
 // responsive images
 img{display: block; max-width: 100%;}
 
 // get rid of default shit
 h1, h2, h3, h4, h5, h6, p{margin: 0;}
 ul, ol{list-style: none; padding: 0; margin: 0;}
-
-// fix for react-fastclick
-html, body{
-	height: 100%;
-	-webkit-tap-highlight-color: transparent; 
-}

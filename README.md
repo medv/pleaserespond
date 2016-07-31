@@ -24,7 +24,7 @@ Because jeet does not use a pre-defined grid system and has amazing gutter contr
     @import [path_to_node_modules]/pleaserespond/pleaserespond
     section{background: red;}
     
-In the above case we will have two perfectly reasonable statements follow one another vertically on page. The red section will be 100% width, but the wrap (by default) will be a centered div with 95% (default) width that won't get larger than 1200px (default).
+In the above case we will have two perfectly reasonable statements follow one another vertically on page. The red section will be 100% width, but the wrap will be a centered div with 95% (default) width that won't get larger than 1200px (default).
 
     //scss
     section{
