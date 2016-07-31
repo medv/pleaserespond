@@ -1,8 +1,10 @@
 # pleaserespond
 
-Not a framework, but a ready collection with an opinion and some utils.
+Opinionated library for a fluid scss mobile-first layout.
 
-Unifies normalize.css, jeet.gs, sass-breakpoints and provides a .wrap class to house your responsive content. You still need to skillfully leverage jeet to manage custom component breakpoints as you gradually go to higher resolutions (horizontally and/or vertically).
+`npm install pleaserespond --save`
+
+Unifies normalize-sass, jeet, breakpoint-sass and provides a .wrap class to house your responsive content. You still need to skillfully leverage jeet to manage custom component breakpoints as you gradually go to higher resolutions (horizontally and/or vertically).
 
 Plan and write all xhtml/css with mobile-first mentality. At some point, you will begin resizing your browser window up in various directions and certain components will very apparently need a new breakpoint here or there to look natural. It can happen at 631px for all you know. The idea is to not only use the predefined breakpoint sizes like $mobile or $tablet. Though they are handy, jeet exists to allow extremely careful control of your website or app components on an individual basis.
 
