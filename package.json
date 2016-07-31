@@ -1,7 +1,7 @@
 {
   "name": "pleaserespond",
   "version": "1.0.2",
-  "description": "light responsive framework",
+  "description": "light responsive scss boilerplate",
   "main": "pleaserespond.scss",
   "dependencies": {
     "jeet": "^6.1.4",
