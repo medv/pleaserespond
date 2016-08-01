@@ -30,13 +30,13 @@ In the above case we will have two perfectly reasonable statements follow one an
 
     //scss
     section{
-        .left{
+        .pie{
             @include breakpoint($tablet) {
                 @include column(2/3);
             }
         }
 
-        .right{
+        .cake{
             @include breakpoint($tablet) {
                 @include column(1/3);
             }
