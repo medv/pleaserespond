@@ -1,16 +1,16 @@
-# pleaserespond
+# pleaserespond v1
 
 Opinionated library for a fluid scss mobile-first layout.
 
 `npm install pleaserespond --save`
 
     //scss
-    @import node_modules/pleaserespond/pleaserespond
+    @import [path_to_node_modules]/pleaserespond/pleaserespond
 
 
 Unifies normalize-sass, jeet, breakpoint-sass and provides a .wrap class to house your responsive content. You still need to skillfully leverage jeet to manage custom component breakpoints as you gradually go to higher resolutions (horizontally and/or vertically).
 
-Plan and write all xhtml/css with mobile-first mentality. At some point, you will begin resizing your browser window up in various directions and certain components will very apparently need a new breakpoint here or there to look natural. It can happen at 631px for all you know. The idea is to not only use the predefined breakpoint sizes like $mobile or $tablet. Though they are handy, jeet exists to allow extremely careful control of your website or app components on an individual basis.
+Plan and write all xhtml/css mobile first. At some point, you will begin resizing your browser window up in various directions and certain components will very apparently need a new breakpoint here or there to look natural. It can happen at 631px for all you know. The idea is to not only use the predefined breakpoint sizes like $mobile or $tablet. Though they are handy, jeet exists to allow extremely careful control of your website or app components on an individual basis.
 
 Because jeet does not use a pre-defined grid system and has amazing gutter control, we do not have to pollute the DOM with any style-specific information (unless you want a fluid wrap). XHTML is for semantic content and CSS is for style, that was the idea a while ago some say.
 
@@ -51,4 +51,9 @@ In the above case we will have two perfectly reasonable statements follow one an
         }
     }
 
-Now, above the $tablet breakpoint, we have 3 columns within our constricted wrap, with Pie taking its well-deserved larger chunk of the screen. If you keep resizing the window by a few hundred pixels you might even see the cake get blue with envy.
+Now, above the $tablet breakpoint, we have a 3 column grid within our centered wrap, with Pie taking its well-deserved larger chunk of the screen. If you keep resizing the window by a few hundred pixels you might even see the cake get blue with envy.
+
+# pleaserespond v2 - future plan
+
+I want to stop making things that have a dumb breakpoint at n horizontal pixels. There will be a significant react addition to the slim scss currently present in this repository. It will aim to speed up your responsive development, especially when it comes to areas highly reliant on screen fold size and variable-length content.
+
