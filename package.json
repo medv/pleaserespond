@@ -1,6 +1,6 @@
 {
   "name": "pleaserespond",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "light responsive scss boilerplate",
   "main": "pleaserespond.scss",
   "dependencies": {
