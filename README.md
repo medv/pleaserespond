@@ -1,6 +1,7 @@
 # pleaserespond v1
 
-Opinionated library for a fluid scss mobile-first layout.
+react-driven library for a fluid scss mobile-first layout.
+currently it is a useful scss toolkit, but will be upgraded with intelligent fluidity
 
 `npm install pleaserespond --save`
 
@@ -55,5 +56,5 @@ Now, above the $tablet breakpoint, we have a 3 column grid within our centered w
 
 # pleaserespond v2 - future plan
 
-I want to stop making things that have a dumb breakpoint at n horizontal pixels. There will be a significant react addition to the slim scss currently present in this repository. It will aim to speed up your responsive development, especially when it comes to areas highly reliant on screen fold size and variable-length content.
+There will be a significant react core to the slim scss currently present in this repository. It will aim to speed up your responsive development, especially when it comes to areas highly reliant on screen fold size and variable-length content. We need to spend less time tweaking breakpoints when we can intelligently decide when it's time for something to notch itself up to the next breakpoint.
 

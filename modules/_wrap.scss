@@ -3,7 +3,7 @@ $wrap-width: 95%!default; // mobile wrap won't be wider than this
 $wrap-max-width: 1200px!default; // desktop wrap won't be wider than this
 
 // breakpoints
-$mobile: 0px!default;
+$mobile: 320px!default;
 $phablet: 550px!default;
 $tablet: 750px!default;
 $laptop: 1200px!default;
@@ -16,4 +16,9 @@ $desktop: 1600px!default;
 	position: relative;
 	width: $wrap-width; max-width: $wrap-max-width;
 	margin: 0 auto;
+}
+
+// use to keep a particular wrap a bit smaller if needed
+@mixin constrict($size: $mobile) {
+	max-width: $size;
 }
