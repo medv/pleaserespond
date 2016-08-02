@@ -18,7 +18,12 @@ $desktop: 1600px!default;
 	margin: 0 auto;
 }
 
-// use to keep a particular wrap a bit smaller if needed
-@mixin constrict($size: $mobile) {
+// apply to a .wrap
+@mixin small($size: $mobile) {
+	max-width: $size;
+}
+
+// apply to a .wrap
+@mixin wide($size: $wrap-width) {
 	max-width: $size;
 }
