@@ -1,4 +1,4 @@
-@mixin selfclear(){
+@mixin selfclear() {
 	&::after{
 		content: "";
 		display: table;
@@ -6,11 +6,18 @@
 	}
 }
 
-@mixin blockify(){
+@mixin blockify() {
 	display: block;
 	font-size: 0px; text-indent: -9999px; line-height: 0;
 }
 
-@mixin mask(){
+@mixin mask() {
 	position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+}
+
+@mixin placeholder{
+	&::-webkit-input-placeholder{@content}
+	&:-moz-placeholder{@content}
+	&::-moz-placeholder{@content}
+	&:-ms-input-placeholder{@content}
 }
