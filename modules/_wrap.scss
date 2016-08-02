@@ -20,10 +20,10 @@ $desktop: 1600px!default;
 
 // apply to a .wrap
 @mixin small($size: $mobile) {
-	width: $size; max-width: $size;
+	width: $size; max-width: $wrap-width;
 }
 
 // apply to a .wrap
 @mixin wide($size: $wrap-width) {
-	width: $size; max-width: $size;
+	width: $size; max-width: $wrap-width;
 }
