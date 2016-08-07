@@ -16,7 +16,10 @@ html, body{
 }
 
 // responsive images
-img, svg{display: block; width: 100%; max-width: 100%;}
+img{display: block; width: 100%; max-width: 100%;}
+
+// inline svg
+svg{width: auto; height: auto; max-width: 100%;}
 
 // get rid of default shit
 h1, h2, h3, h4, h5, h6, p{margin: 0;}
