@@ -54,6 +54,10 @@ In the above case we will have two perfectly reasonable statements follow one an
 
 Now, above the $tablet breakpoint, we have a 3 column grid within our centered wrap, with Pie taking its well-deserved larger chunk of the screen. If you keep resizing the window by a few hundred pixels you might even see the cake get blue with envy.
 
+# pleaserespond v1.5
+
+Convert from sass to webpack/postcss/cssnext approach
+
 # pleaserespond v2 - future plan
 
 There will be a significant react core to the slim scss currently present in this repository. It will aim to speed up your responsive development, especially when it comes to areas highly reliant on screen fold size and variable-length content. We need to spend less time tweaking breakpoints when we can intelligently decide when it's time for something to notch itself up to the next breakpoint.
